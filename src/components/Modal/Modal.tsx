@@ -9,7 +9,7 @@ interface ModalProps {
 }
 
 export default function Modal({ onClose, photo }: ModalProps) {
-  const handleBackdropClick = (event: React.MouseEvent<HTMLDListElement>) => {
+  const handleBackdropClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
       onClose();
     }

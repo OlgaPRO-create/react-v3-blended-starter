@@ -9,7 +9,7 @@ import type { Photo } from "../../types/photo";
 import Loader from "../Loader/Loader";
 import Text from "../Text/Text";
 import Modal from "../Modal/Modal";
-import ErrorMessage from "../../ErrorMessage/ErrorMessage";
+import ErrorMessage from "../../ErrorMessage/ErrorMassage";
 
 export default function App() {
   const [photos, setPhotos] = useState<Photo[]>([]);
@@ -74,7 +74,6 @@ export default function App() {
             <Modal photo={selectedPhoto} onClose={closeModal} />
           )}
         </Container>
-        Home page
       </Section>
     </>
   );

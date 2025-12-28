@@ -3,11 +3,11 @@ import toast from "react-hot-toast";
 
 import style from "./Form.module.css";
 
-interface FormProps {
-  onSubmit: (searchQuery: string) => void;
+interface FormUserProps {
+  onSubmit: (value: string) => void;
 }
 
-export default function Form({ onSubmit }: FormProps) {
+export default function Form({ onSubmit }: FormUserProps) {
   const handleSubmit = (formData: FormData) => {
     const query = formData.get("search") as string;
     if (query.trim() === "") {
