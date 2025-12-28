@@ -7,6 +7,7 @@ import { createPost, fetchUsers } from '@/lib/api';
 
 import css from './CreatePostForm.module.css';
 import { User } from '@/types/user';
+// import toast from 'react-hot-toast';
 
 const PostSchema = Yup.object().shape({
   title: Yup.string()
